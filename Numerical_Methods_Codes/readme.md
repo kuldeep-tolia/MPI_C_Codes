@@ -1,0 +1,11 @@
+-> This section has computer programs that implements solution procedures for solving linear and non-linear algebraic equations, ordinary differential equations (ODE), partial differential equations (PDE), and matrix-multiplication.    
+-> Finite Difference Method (FDM) forms the basis of the discretization of the governing equations.  
+-> The programs are parallelized using MPI and the speedup performance of the parallelized codes is measured.  
+-> To check the syntax/operation of a particular MPI call, you may refer to the following websites which provides description of each clause/construct:
+- https://www.open-mpi.org/doc/v3.1/  
+- https://rookiehpc.org/mpi/docs/index.html  
+
+-> I have used mpicc wrapper to compile and link my MPI programs.  
+-> Compiling and running a C program:
+- $ mpicc file_name.c -lm -o ./output_name.out
+- $ mpirun -np <num_process> ./output_name.out
